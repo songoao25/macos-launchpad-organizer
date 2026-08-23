@@ -20,5 +20,5 @@ fi
 name="macos-launchpad-organizer-v${version}.zip"
 archive="../${name}"
 git archive --format=zip --prefix=macos-launchpad-organizer/ --output="$archive" HEAD
-shasum -a 256 "$archive" > "${archive}.sha256"
+(cd "$(dirname "$archive")" && shasum -a 256 "$(basename "$archive")") > "${archive}.sha256"
 echo "Created ${archive} and ${archive}.sha256"
