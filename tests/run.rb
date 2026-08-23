@@ -16,6 +16,11 @@ cases = [
   ["root app", "before.yml", "after-root.yml", false],
   ["multiple pages", "before.yml", "after-two-pages.yml", false],
   ["empty folder", "before.yml", "after-empty-folder.yml", false],
+  ["empty folder page", "before.yml", "after-empty-folder-page.yml", false],
+  ["duplicate folder", "before.yml", "after-duplicate-folder.yml", false],
+  ["nested folder", "before.yml", "after-nested-folder.yml", false],
+  ["invalid page number", "before.yml", "after-invalid-page-number.yml", false],
+  ["YAML aliases", "aliases.yml", "after.yml", false],
   ["malformed layout", "malformed.yml", "after.yml", false]
 ]
 

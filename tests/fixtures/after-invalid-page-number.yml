@@ -1,0 +1,8 @@
+apps:
+  pages:
+    - number: one
+      items:
+        - folder: 办公
+          pages:
+            - number: 1
+              items: [Writer, Sheet, Browser, Music]

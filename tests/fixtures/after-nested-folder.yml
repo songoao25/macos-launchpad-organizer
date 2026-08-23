@@ -1,0 +1,14 @@
+apps:
+  pages:
+    - number: 1
+      items:
+        - folder: 工具
+          pages:
+            - number: 1
+              items:
+                - folder: 子文件夹
+                  pages:
+                    - number: 1
+                      items: [Writer, Sheet]
+                - Browser
+                - Music

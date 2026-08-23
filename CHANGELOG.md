@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented here.
 
+## 0.1.4 - 2026-08-23
+
+- Reject nested folders and duplicate folder names in writer-compatible layouts.
+- Validate page numbers and reject empty folder pages, YAML aliases, and malformed layout structures.
+- Added regression coverage for the expanded validation contract.
+- Added CodeQL, Dependabot, code ownership, stronger privacy ignores, release checksums, and clearer scope language.
+
 ## 0.1.3 - 2026-08-23
 
 - Updated the pinned GitHub Actions checkout dependency to the Node 24 runtime.

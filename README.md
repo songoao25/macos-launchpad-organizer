@@ -6,7 +6,7 @@
 [![Last commit](https://img.shields.io/github/last-commit/songoao25/macos-launchpad-organizer)](https://github.com/songoao25/macos-launchpad-organizer/commits/main)
 [![Codex skill](https://img.shields.io/badge/Codex-skill-412991)](SKILL.md)
 
-A Codex skill for planning and validating a safe, batch organization of the **native macOS Launchpad**. It helps an agent inventory the current layout, research unfamiliar apps, propose natural folder names, and verify that a reviewed layout has no omissions or duplicates.
+A **planning and validation** Codex skill for safe, batch organization of the **native macOS Launchpad**. It helps an agent inventory the current layout, research unfamiliar apps, propose natural folder names, and verify that a reviewed layout has no omissions or duplicates. **It does not include a database writer.**
 
 ## Scope
 
@@ -78,6 +78,7 @@ It rejects:
 - root-level apps when a folders-only layout is requested;
 - multiple root pages when one page is requested;
 - empty folders; and
+- nested folders or duplicate folder names, which are incompatible with the common `lporg` folder-page format; and
 - malformed or oversized YAML input.
 
 ## Test
@@ -98,7 +99,7 @@ Do not claim that a Dock restart proves full-reboot persistence. Do not retry a 
 
 ## Publishing a release
 
-Follow the [release checklist](docs/RELEASING.md) and enable private vulnerability reporting in repository settings. `scripts/package_release.sh X.Y.Z` creates a clean ZIP from a committed tree with the correct top-level folder.
+Follow the [release checklist](docs/RELEASING.md) and enable private vulnerability reporting in repository settings. `scripts/package_release.sh X.Y.Z` creates a clean ZIP and a SHA-256 checksum from a committed tree with the correct top-level folder.
 
 ## Contributing and security
 
