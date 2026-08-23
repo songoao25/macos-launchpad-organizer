@@ -1,0 +1,4 @@
+interface:
+  display_name: "macOS 启动台整理"
+  short_description: "安全批量整理原生 macOS 启动台"
+  default_prompt: "Use $macos-launchpad-organizer to audit, classify, and safely organize my native macOS Launchpad."

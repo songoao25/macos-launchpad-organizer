@@ -1,0 +1,12 @@
+apps:
+  pages:
+    - number: 1
+      items:
+        - folder: 办公
+          pages:
+            - number: 1
+              items: [Writer, Sheet]
+        - folder: 浏览器
+          pages:
+            - number: 1
+              items: [Browser]

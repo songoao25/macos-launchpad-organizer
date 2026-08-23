@@ -1,0 +1,9 @@
+apps:
+  pages:
+    - number: 1
+      items:
+        - Writer
+        - folder: 其他
+          pages:
+            - number: 1
+              items: [Sheet, Browser, Music]

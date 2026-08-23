@@ -1,0 +1,16 @@
+.DS_Store
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.bak
+backups/
+layouts/private/
+lporg.yml
+*.yml
+*.yaml
+!agents/openai.yaml
+!tests/**/*.yml
+!tests/**/*.yaml

@@ -1,0 +1,4 @@
+apps:
+  pages:
+    - number: 1
+      items: [Writer, Sheet, Browser, Music, Music]
