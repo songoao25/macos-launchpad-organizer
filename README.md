@@ -1,6 +1,10 @@
 # macOS Launchpad Organizer
 
 [![Validate](https://github.com/songoao25/macos-launchpad-organizer/actions/workflows/validate.yml/badge.svg)](https://github.com/songoao25/macos-launchpad-organizer/actions/workflows/validate.yml)
+[![Release](https://img.shields.io/github/v/release/songoao25/macos-launchpad-organizer?display_name=tag)](https://github.com/songoao25/macos-launchpad-organizer/releases)
+[![License](https://img.shields.io/github/license/songoao25/macos-launchpad-organizer)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/songoao25/macos-launchpad-organizer)](https://github.com/songoao25/macos-launchpad-organizer/commits/main)
+[![Codex skill](https://img.shields.io/badge/Codex-skill-412991)](SKILL.md)
 
 A Codex skill for planning and validating a safe, batch organization of the **native macOS Launchpad**. It helps an agent inventory the current layout, research unfamiliar apps, propose natural folder names, and verify that a reviewed layout has no omissions or duplicates.
 
@@ -12,6 +16,13 @@ A Codex skill for planning and validating a safe, batch organization of the **na
 - Does not support organizing native Launchpad on macOS Tahoe 26+, where Apple removed the feature.
 
 See [compatibility policy](docs/COMPATIBILITY.md) and the [writer contract](docs/WRITER-CONTRACT.md) before attempting a write.
+
+## Highlights
+
+- Plans natural, purpose-specific folders instead of generic auto-categories.
+- Keeps an exported layout as the source of truth, so no visible app is silently lost.
+- Checks omissions, duplicates, root-level icons, page count, and empty folders before a writer is used.
+- Keeps the private-database writer as an explicit trust boundary rather than hiding the risk.
 
 ## Why a skill instead of a drag-and-drop tutorial?
 
@@ -39,6 +50,15 @@ Restart or refresh Codex if the skill does not appear immediately. Invoke it wit
 ```text
 Use $macos-launchpad-organizer to audit and organize my native macOS Launchpad.
 ```
+
+## Project layout
+
+| Path | Purpose |
+| --- | --- |
+| `SKILL.md` | Instructions Codex loads for native Launchpad organization requests. |
+| `scripts/validate_layout.rb` | Read-only YAML plan and result validator. |
+| `tests/` | Public positive and negative validator fixtures. |
+| `docs/` | Compatibility, external writer, and release guidance. |
 
 ## Validate a layout
 

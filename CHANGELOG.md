@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## 0.1.1 - 2026-08-23
+
+- Added release, license, activity, and skill badges to the README.
+- Added repository metadata and topic guidance for GitHub publication.
+
 ## 0.1.0 - 2026-08-23
 
 - Initial public release of the native Launchpad organization skill.
