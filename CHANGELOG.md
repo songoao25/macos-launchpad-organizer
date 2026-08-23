@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## 0.1.2 - 2026-08-23
+
+- Restored the tracked GitHub Actions workflow after tightening YAML privacy ignores.
+
 ## 0.1.1 - 2026-08-23
 
 - Added release, license, activity, and skill badges to the README.
